@@ -1,0 +1,95 @@
+.mobile-nav{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    display: none;
+    height: 100%;
+    background: url('https://www.10wallpaper.com/wallpaper/1366x768/1711/Calm_lake_in_the_evening_Scenery_HD_Wallpaper_1366x768.jpg');
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mobile-nav__link{
+    display: inline-block;
+    position: relative;
+    font-size: 0.75em;
+    color: var(--clr-light);
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 0px;
+    transition: 5s;
+}
+
+.mobile-nav__link::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: var(--clr-light);
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.mobile-nav__link:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.mobile-nav__search-bar{
+    display: inline-block;
+    font-family: inherit;
+    width: 200px;
+    height: 45px;
+    padding-left: 10px;
+    background: transparent;
+    border: 2px solid var(--clr-light);
+    color: var(--clr-light);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-nav__search__ph{
+    display: inline-block;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+}
+
+.mobile-nav__search__ph::placeholder{
+    display: inline-block;
+    color: var(--clr-light);
+    cursor: none;
+}
+
+.mobile-nav__search__btn{
+    display: inline-block;
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    border: none;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#mobile-nav__search__icon{
+    display: inline-block;
+    font-size: 22px;
+    color: var(--clr-light);
+    cursor: pointer;
+}
+
